@@ -1,0 +1,24 @@
+一、安装宝塔
+https://www.bt.cn/new/download.html
+二、安装lamp环境
+Mysql5.7.40
+PHP7.3
+三、添加网站，上传源码至根目录并解压
+四、设置伪静态为thinkphp
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteBase /
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^(.*)$ index.php?s=/$1 [QSA,PT,L]
+</IfModule>
+
+五、设置/public为运行目录
+六、安装php7.3扩展文件
+ionCube、fileinfo
+并修改配置文件添加以下内容
+extension = idcsmart.so
+最后重启php
+七、复制授权文件（/魔方财务破解授权扩展文件/扩展/php7.3/idcsmart.so）-> /www/server/php/73/lib/php/extensions/no-debug-non-zts-20180731
+八、访问域名，进入魔方财务安装界面
+
