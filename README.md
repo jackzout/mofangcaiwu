@@ -181,3 +181,6 @@ systemctl restart php-fpm73
 禁用不使用的PHP函数
 
 定期更新系统和组件以确保安全
+##如需要帮助部署可wechat联系
+![image](https://github.com/user-attachments/assets/014eeff4-4c6f-40e1-b51e-f5eb4160c01e)
+
